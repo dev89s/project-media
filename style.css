@@ -1,5 +1,6 @@
 :root {
-    --player-min-height: 600px
+    --player-max-height: 600px;
+    --player-min-height: 300px;
 }
 
 * {
@@ -8,10 +9,11 @@
     box-sizing: border-box;
 }
 
+
+
 nav {
     display: flex;
     align-items: center;
-    background-color: lightblue;
 }
 
 .logo {
@@ -26,6 +28,7 @@ nav {
     align-items: center;
     margin: 0;
     padding: 0;
+
 }
 
 .logo img {
@@ -47,7 +50,6 @@ nav {
 #search-button {
     border: 1px solid black;
     border-radius: 0 30px 30px 0;
-    background-color: lightgray;
     height: 30px;
     width: 55px;
     margin: 0;
@@ -64,33 +66,65 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
     margin: 8px 8px 0px;
     flex: 2.2;
-    min-height: var(--player-min-height);
+}
 
+.player-container {
+    margin: 8px 0;
+    width: calc((16/9) * 500px);
+
+}
+
+.video-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .player {
     padding: 0;
-    margin: 0;
-    width: calc((16/9) * var(--player-min-height));
-    height: var(--player-min-height);
+    margin: 0 auto;
+    height: 500px;
+    width: calc((16/9) * 500px);
 }
 
 .sidebar {
     flex: 1;
-    background-color: rgb(41, 147, 241);
     height: 700px;
-    min-width: 250px;
+    min-width: 330px;
     max-width: 400px;
     margin: 8px;
+    margin-right: 25px;
     margin-left: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 
 .sidebar li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.sidebar a {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.sidebar li img {
+    width: 50%;
+}
+
+.sidebar-description {
+    align-self: flex-start;
+    max-width: 180px;
+    margin: 4px;
 }
