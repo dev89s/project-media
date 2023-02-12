@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    Hi!
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="youtube-logo.png" alt="youtube-logo">
+            </div>
+            <div class="search-box">
+                <input type="text" name="search" id="search-input">
+                <button id="search-button">
+                    Search
+                </button>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="player-section">
+            <div class="player-frame">
+                <iframe class="player" src="https://www.youtube.com/embed/1HfR497RiPo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>video 1</li>
+                <li>video 2</li>
+                <li>video 3</li>
+            </ul>
+        </div>
+    </main>
+
 </body>
+
 </html>
+
+<!-- width="560" -->
