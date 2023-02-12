@@ -10,12 +10,18 @@ nav {
     background-color: lightblue;
 }
 
-
 .logo {
     display: flex;
     align-items: center;
     margin: 8px;
     width: 120px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .logo img {
